@@ -11,7 +11,6 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->integer('construction_year');
-            $table->integer('number_of_rooms');
             $table->timestamps();
         });
     }
