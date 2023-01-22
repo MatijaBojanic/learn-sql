@@ -12,12 +12,8 @@ class RoomFactory extends Factory
 
     public function definition(): array
     {
-        $randomHotelId = Hotel::all()->random()->id;
-        $nextRoomNumber = Room::whereHotelId($randomHotelId)->get()->count() + 1;
-
         return [
-            'hotel_id' => $randomHotelId,
-            'number' => $nextRoomNumber,
+            'hotel_id' => Hotel::all()->random()->id,
             'number_of_beds' => $this->faker->numberBetween(1,4)
         ];
     }

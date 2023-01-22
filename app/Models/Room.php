@@ -11,6 +11,14 @@ class Room extends Model
 
     protected $guarded = [];
 
+    protected static function boot() {
+        parent::boot();
+
+        static::creating(function ($model) {
+            $model->number = Hotel::find($model->hotel_id)->rooms->count() + 1;
+        });
+    }
+
     public function hotel()
     {
         return $this->belongsTo(Hotel::class);
