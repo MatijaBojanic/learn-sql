@@ -42,7 +42,7 @@ The environment should be set up with minimal interaction so that you can get to
 
 - Access the db:
 
-`docker exec -it sql-test-mysql-1 bash `
+`docker exec -it learn-sql-mysql-1 bash `
 
 ` mysql -u <env file db_username> -p`
 
