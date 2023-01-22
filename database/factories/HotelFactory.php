@@ -13,8 +13,7 @@ class HotelFactory extends Factory
     {
         return [
             'name' => $this->faker->company(),
-            'construction_year' => $this->faker->numberBetween(1890, 2020),
-            'number_of_rooms' => $this->faker->numberBetween(1, 200),
+            'construction_year' => $this->faker->numberBetween(1890, 2020)
         ];
     }
 }

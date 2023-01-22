@@ -12,7 +12,6 @@ class ClientFactory extends Factory
     public function definition(): array
     {
         return [
-            'uid' => $this->faker->numerify("#############"),
             'name' => $this->faker->name(),
             'age' => $this->faker->numberBetween(20, 90),
             'address' => $this->faker->city(),
