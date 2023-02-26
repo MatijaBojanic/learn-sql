@@ -47,3 +47,5 @@ The environment should be set up with minimal interaction so that you can get to
 ` mysql -u <env file db_username> -p`
 
 - Write the queries :)
+
+- The exercise set can be found under the ExerciseQueries.md file.
